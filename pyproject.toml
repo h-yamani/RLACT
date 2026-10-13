@@ -1,0 +1,14 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rlact"
+version = "0.1.0"
+description = "A reproducible multi-task and compositional robot learning research testbed"
+requires-python = ">=3.11,<3.12"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
