@@ -1,0 +1,52 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.key
+
+# Robot datasets
+data/
+datasets/
+
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Training outputs
+outputs/
+runs/
+wandb/
+logs/
+checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# External repositories and simulation assets
+external/
