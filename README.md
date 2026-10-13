@@ -6,6 +6,30 @@ RLACT is an open, modular research project for **training, evaluating, and compa
 
 > **Project status: early development (v0.1.0).** A pretrained ACT policy has successfully completed a cube-transfer rollout in MuJoCo. The RLACT package, task interface, ALOHA environment adapter, and initial contact-based reward logic are implemented and pass basic reset/initial-state checks. An end-to-end automated benchmark, repeated evaluations, additional tasks, and further policy baselines are **not yet validated**.
 
+## System Architecture
+
+RLACT is designed as a modular research platform
+for reproducible robot learning experiments.
+
+The architecture separates task definitions,
+simulation environments, datasets, learning policies,
+experiment execution, and statistical evaluation.
+
+![RLACT System Architecture](docs/images/rlact_architecture.svg)
+
+### Core Design Principles
+
+- **Modularity:** Add tasks and policies independently.
+- **Reproducibility:** Track configurations, seeds, datasets,
+  checkpoints, and evaluation results.
+- **Fair Comparison:** Evaluate policies using consistent
+  scenarios, budgets, and statistical protocols.
+- **Extensibility:** Support new robot-learning algorithms,
+  environments, and research experiments.
+- **Compositional Learning:** Evaluate individual skills,
+  multi-task policies, and long-horizon task sequences.
+
+
 ## Vision
 
 A new policy should be easy to evaluate on existing tasks. A new task should be easy to add without rewriting the evaluation engine. Every comparison should record its data, evaluation scenarios, training budget, compute, implementation version, and uncertainty.
